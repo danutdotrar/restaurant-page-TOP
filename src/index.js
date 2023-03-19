@@ -1,3 +1,3 @@
-import { hello } from "./pageLoad";
+import { component } from "./pageLoad";
 
-hello();
+component();
