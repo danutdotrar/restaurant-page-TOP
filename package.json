@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page-top",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danutdotrar/restaurant-page-TOP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danutdotrar/restaurant-page-TOP/issues"
+  },
+  "homepage": "https://github.com/danutdotrar/restaurant-page-TOP#readme",
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
+}
