@@ -1,3 +1,4 @@
+import "./style.css";
 import Icon from "./home-image.jpg";
 
 function component() {
