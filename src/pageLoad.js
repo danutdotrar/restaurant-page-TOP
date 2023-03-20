@@ -7,9 +7,9 @@ function component() {
 
     // Create elements
     const header = document.createElement("div");
-    const headerTabs = document.createElement("div");
     const h1 = document.createElement("h1");
 
+    const headerTabs = document.createElement("div");
     const homeTab = document.createElement("div");
     const menuTab = document.createElement("div");
     const aboutTab = document.createElement("div");
@@ -19,11 +19,17 @@ function component() {
     // Add header
     h1.textContent = "Restaurant Page";
     header.className = "header";
+    header.appendChild(h1);
 
-    // Tabs
+    // // Tabs
     homeTab.textContent = "Home";
+    homeTab.className = "home-tab";
+
     menuTab.textContent = "Menu";
+    menuTab.className = "menu-tab";
+
     aboutTab.textContent = "About";
+    aboutTab.className = "about-tab";
 
     // Add class to headerTabs
     headerTabs.className = "header-tabs";
@@ -32,7 +38,6 @@ function component() {
     headerTabs.appendChild(menuTab);
     headerTabs.appendChild(aboutTab);
 
-    header.appendChild(h1);
     header.appendChild(headerTabs);
 
     // Add restaurant info
