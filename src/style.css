@@ -6,28 +6,50 @@ html {
     height: 100%;
 }
 
+/* FONT */
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(./static/Montserrat-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     min-height: 100vh;
     width: 100%;
     padding: 0;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
+/* HEADER */
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     outline: 1px solid red;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    padding: 20px;
+}
+
+.header-tabs .tabs {
+    padding: 15px 30px;
+    background-color: #f19165;
+    cursor: pointer;
 }
 
 .header-tabs {
     display: flex;
     justify-content: space-evenly;
     width: 40%;
-    padding: 20px;
+    padding-top: 20px;
 }
 
+/* CONTENT */
 #content {
     height: 100vh;
     display: flex;
@@ -36,9 +58,22 @@ body {
     align-items: center;
 }
 
+/* PAGE CONTAINER */
+.page-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
 .home-image {
     width: 450px;
     height: auto;
+}
+
+.home-info {
+    font-size: 18px;
 }
 
 h1 {

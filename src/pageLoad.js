@@ -5,8 +5,9 @@ function component() {
     // Select content div
     const content = document.getElementById("content");
 
-    // Create elements
+    // Create header elements
     const header = document.createElement("div");
+    const headerTitle = document.createElement("div");
     const h1 = document.createElement("h1");
 
     const headerTabs = document.createElement("div");
@@ -14,24 +15,24 @@ function component() {
     const menuTab = document.createElement("div");
     const aboutTab = document.createElement("div");
 
-    const restaurantInfo = document.createElement("div");
-
     // Add header
     h1.textContent = "Restaurant Page";
     header.className = "header";
-    header.appendChild(h1);
+    headerTitle.className = "header-title";
+    headerTitle.appendChild(h1);
+    header.appendChild(headerTitle);
 
-    // // Tabs
+    // Header tabs
     homeTab.textContent = "Home";
-    homeTab.className = "home-tab";
+    homeTab.className = "tabs home-tab";
 
     menuTab.textContent = "Menu";
-    menuTab.className = "menu-tab";
+    menuTab.className = "tabs menu-tab";
 
     aboutTab.textContent = "About";
-    aboutTab.className = "about-tab";
+    aboutTab.className = "tabs about-tab";
 
-    // Add class to headerTabs
+    // Set the class to headerTabs
     headerTabs.className = "header-tabs";
 
     headerTabs.appendChild(homeTab);
@@ -40,7 +41,12 @@ function component() {
 
     header.appendChild(headerTabs);
 
+    // Add page container
+    const pageContainer = document.createElement("div");
+    pageContainer.className = "page-container";
+
     // Add restaurant info
+    const restaurantInfo = document.createElement("div");
     restaurantInfo.className = "home-info";
     restaurantInfo.innerText =
         "Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine.";
@@ -51,9 +57,11 @@ function component() {
     homeImage.className = "home-image";
 
     // Add elements to content div
+    pageContainer.appendChild(restaurantInfo);
+    pageContainer.appendChild(homeImage);
+
     content.appendChild(header);
-    content.appendChild(restaurantInfo);
-    content.appendChild(homeImage);
+    content.appendChild(pageContainer);
 }
 
 export { component };
