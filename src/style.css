@@ -4,6 +4,7 @@
 
 html {
     height: 100%;
+    margin: 0;
 }
 
 /* FONT */
@@ -15,11 +16,13 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-flow: column;
 }
 
 /* HEADER */
@@ -29,7 +32,7 @@ body {
     align-items: center;
     width: 100%;
     outline: 1px solid red;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .header-title {
@@ -40,22 +43,27 @@ body {
     padding: 15px 30px;
     background-color: #f19165;
     cursor: pointer;
+    outline: 1px solid red;
 }
 
 .header-tabs {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5px;
     width: 40%;
     padding-top: 20px;
 }
 
 /* CONTENT */
 #content {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    background-color: #e0b69a;
+    flex: 1 1 auto;
+    margin: 50px;
+    border-radius: 15px;
 }
 
 /* PAGE CONTAINER */
@@ -64,7 +72,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 80%;
+    padding: 50px 0px;
 }
 
 .home-image {
@@ -74,6 +83,7 @@ body {
 
 .home-info {
     font-size: 18px;
+    line-height: 22px;
 }
 
 h1 {
