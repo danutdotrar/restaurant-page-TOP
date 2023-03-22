@@ -44,7 +44,6 @@ function homeTabComponent() {
     // Add page container
     const pageContainer = document.createElement("div");
     pageContainer.className = "page-container";
-
     // Add restaurant info
     const restaurantInfo = document.createElement("div");
     restaurantInfo.className = "home-info";
