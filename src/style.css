@@ -23,6 +23,7 @@ body {
     font-family: "Montserrat", sans-serif;
     display: flex;
     flex-flow: column;
+    overflow-y: scroll; /* prevent scrollbar push contents to the left*/
 }
 
 /* HEADER */
@@ -64,6 +65,10 @@ body {
     flex: 1 1 auto;
     margin: 50px;
     border-radius: 15px;
+    scrollbar-gutter: stable;
+
+    animation-name: pageTransition;
+    animation-duration: 1s;
 }
 
 /* PAGE CONTAINER */
@@ -74,17 +79,9 @@ body {
     align-items: center;
     width: 80%;
     padding: 50px 0px;
+
     animation-name: pageTransition;
     animation-duration: 0.6s;
-}
-
-@keyframes pageTransition {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .home-image {
@@ -101,4 +98,15 @@ h1 {
     margin: 0;
     padding: 0;
     color: green;
+}
+
+/* KEYF */
+
+@keyframes pageTransition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
