@@ -16,7 +16,7 @@ function menuTabComponent() {
     const aboutTab = document.createElement("div");
 
     // Add header
-    h1.textContent = "Menu";
+    h1.textContent = "MENU";
     header.className = "header";
     headerTitle.className = "header-title";
     headerTitle.appendChild(h1);
@@ -27,10 +27,16 @@ function menuTabComponent() {
     homeTab.className = "tabs home-tab";
 
     menuTab.textContent = "MENU";
-    menuTab.className = "tabs menu-tab";
+    menuTab.className = "tabs menu-tab active";
 
     aboutTab.textContent = "ABOUT";
     aboutTab.className = "tabs about-tab";
+
+    // Add home image
+    const menuImage = new Image();
+    menuImage.src = Icon;
+    menuImage.className = "menu-image";
+    header.appendChild(menuImage);
 
     // Set the class to headerTabs
     headerTabs.className = "header-tabs";
@@ -51,14 +57,8 @@ function menuTabComponent() {
     restaurantInfo.innerText =
         "Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine..CACAT";
 
-    // Add home image
-    const homeImage = new Image();
-    homeImage.src = Icon;
-    homeImage.className = "home-image";
-
     // Add elements to content div
     pageContainer.appendChild(restaurantInfo);
-    // pageContainer.appendChild(homeImage);
 
     content.appendChild(header);
     content.appendChild(pageContainer);

@@ -4,21 +4,23 @@ import { aboutTabComponent } from "./aboutPage";
 
 const content = document.getElementById("content");
 
+homeTabComponent();
+
 // Use event delegation - add event listener to parent element
 function selectTab(e) {
+    const clickedElement = e.target;
+
     // If the target is clicked, run component function
-    if (e.target.matches(".home-tab")) {
+    if (clickedElement.matches(".home-tab")) {
         content.innerHTML = "";
         homeTabComponent();
-    } else if (e.target.matches(".menu-tab")) {
+    } else if (clickedElement.matches(".menu-tab")) {
         content.innerHTML = "";
         menuTabComponent();
-    } else if (e.target.matches(".about-tab")) {
+    } else if (clickedElement.matches(".about-tab")) {
         content.innerHTML = "";
         aboutTabComponent();
     }
 }
 
 content.addEventListener("click", selectTab);
-
-homeTabComponent();

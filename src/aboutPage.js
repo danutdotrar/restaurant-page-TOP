@@ -13,7 +13,7 @@ function aboutTabComponent() {
     const aboutTab = document.createElement("div");
 
     // Add header
-    h1.textContent = "About";
+    h1.textContent = "ABOUT";
     header.className = "header";
     headerTitle.className = "header-title";
     headerTitle.appendChild(h1);
@@ -27,7 +27,7 @@ function aboutTabComponent() {
     menuTab.className = "tabs menu-tab";
 
     aboutTab.textContent = "ABOUT";
-    aboutTab.className = "tabs about-tab";
+    aboutTab.className = "tabs about-tab active";
 
     // Set the class to headerTabs
     headerTabs.className = "header-tabs";
