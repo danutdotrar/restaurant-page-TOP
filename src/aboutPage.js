@@ -54,7 +54,8 @@ function aboutTabComponent() {
     aboutInfo.className = "about-info";
     aboutInfo.innerHTML = `<p>At our restaurant, we are passionate about creating exceptional dining experiences for our guests. From the moment you walk through our doors, you'll be greeted by a warm and welcoming atmosphere, and a team of professionals who are dedicated to making your visit unforgettable.</p>
         <p>Our culinary team is led by experienced chefs who have a passion for cooking with fresh and locally sourced ingredients. They bring a creative flair to classic dishes, and are always experimenting with new flavors and techniques to offer our guests an ever-evolving menu.
-        We believe that great food should be enjoyed with great company, and that's why we've created a space that's perfect for sharing meals with family and friends. Whether you're celebrating a special occasion, or just looking for a night out, our restaurant provides the ideal backdrop for your next dining experience.</p>`;
+        We believe that great food should be enjoyed with great company, and that's why we've created a space that's perfect for sharing meals with family and friends.</p>
+        <p>Whether you're celebrating a special occasion, or just looking for a night out, our restaurant provides the ideal backdrop for your next dining experience.</p>`;
 
     // Add elements to content div
     pageContainer.appendChild(aboutInfo);
