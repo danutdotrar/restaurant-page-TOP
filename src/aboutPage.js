@@ -1,4 +1,4 @@
-import Icon from "./home-image.jpg";
+import Icon from "./about-image.jpg";
 
 function aboutTabComponent() {
     // Select content div
@@ -52,8 +52,9 @@ function aboutTabComponent() {
     // Add restaurant info
     const aboutInfo = document.createElement("div");
     aboutInfo.className = "about-info";
-    aboutInfo.innerText =
-        "Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine..Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine..Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine..";
+    aboutInfo.innerHTML = `<p>At our restaurant, we are passionate about creating exceptional dining experiences for our guests. From the moment you walk through our doors, you'll be greeted by a warm and welcoming atmosphere, and a team of professionals who are dedicated to making your visit unforgettable.</p>
+        <p>Our culinary team is led by experienced chefs who have a passion for cooking with fresh and locally sourced ingredients. They bring a creative flair to classic dishes, and are always experimenting with new flavors and techniques to offer our guests an ever-evolving menu.
+        We believe that great food should be enjoyed with great company, and that's why we've created a space that's perfect for sharing meals with family and friends. Whether you're celebrating a special occasion, or just looking for a night out, our restaurant provides the ideal backdrop for your next dining experience.</p>`;
 
     // Add elements to content div
     pageContainer.appendChild(aboutInfo);
