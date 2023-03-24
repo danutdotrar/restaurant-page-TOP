@@ -16,20 +16,20 @@ function menuTabComponent() {
     const aboutTab = document.createElement("div");
 
     // Add header
-    h1.textContent = "Restaurant Page";
+    h1.textContent = "Menu";
     header.className = "header";
     headerTitle.className = "header-title";
     headerTitle.appendChild(h1);
     header.appendChild(headerTitle);
 
     // Header tabs
-    homeTab.textContent = "Home";
+    homeTab.textContent = "HOME";
     homeTab.className = "tabs home-tab";
 
-    menuTab.textContent = "Menu";
+    menuTab.textContent = "MENU";
     menuTab.className = "tabs menu-tab";
 
-    aboutTab.textContent = "About";
+    aboutTab.textContent = "ABOUT";
     aboutTab.className = "tabs about-tab";
 
     // Set the class to headerTabs

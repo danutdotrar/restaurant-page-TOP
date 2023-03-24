@@ -1,7 +1,6 @@
 import { homeTabComponent } from "./homePage";
 import { menuTabComponent } from "./menuPage";
-
-homeTabComponent();
+import { aboutTabComponent } from "./aboutPage";
 
 const content = document.getElementById("content");
 
@@ -16,8 +15,10 @@ function selectTab(e) {
         menuTabComponent();
     } else if (e.target.matches(".about-tab")) {
         content.innerHTML = "";
-        menuTabComponent();
+        aboutTabComponent();
     }
 }
 
 content.addEventListener("click", selectTab);
+
+homeTabComponent();
