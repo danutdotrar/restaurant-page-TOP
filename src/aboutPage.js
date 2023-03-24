@@ -1,3 +1,5 @@
+import Icon from "./home-image.jpg";
+
 function aboutTabComponent() {
     // Select content div
     const content = document.getElementById("content");
@@ -29,6 +31,12 @@ function aboutTabComponent() {
     aboutTab.textContent = "ABOUT";
     aboutTab.className = "tabs about-tab active";
 
+    // Add home image
+    const aboutImage = new Image();
+    aboutImage.src = Icon;
+    aboutImage.className = "about-image";
+    header.appendChild(aboutImage);
+
     // Set the class to headerTabs
     headerTabs.className = "header-tabs";
 
@@ -42,18 +50,13 @@ function aboutTabComponent() {
     const pageContainer = document.createElement("div");
     pageContainer.className = "page-container";
     // Add restaurant info
-    const restaurantInfo = document.createElement("div");
-    restaurantInfo.className = "home-info";
-    restaurantInfo.innerText =
+    const aboutInfo = document.createElement("div");
+    aboutInfo.className = "about-info";
+    aboutInfo.innerText =
         "Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine..Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine..Welcome to our restaurant! We offer a diverse menu featuring fresh and locally sourced ingredients. Our skilled chefs prepare each dish with care, and our friendly staff is dedicated to providing you with a memorable dining experience. Whether you're in the mood for a hearty meal or a light bite, we have something to satisfy your appetite. Join us for breakfast, lunch, or dinner and discover the flavors of our cuisine..";
 
-    // Add home image
-    // const homeImage = new Image();
-    // homeImage.src = Icon;
-    // homeImage.className = "home-image";
-
     // Add elements to content div
-    pageContainer.appendChild(restaurantInfo);
+    pageContainer.appendChild(aboutInfo);
     // pageContainer.appendChild(homeImage);
 
     content.appendChild(header);
